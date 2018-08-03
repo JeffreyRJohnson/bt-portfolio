@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "JeffreyRJohnson portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "portfolio",
+    "JeffreyRJohnson",
+    "Jeffrey",
+    "R",
+    "Johnson",
+    "Jeff"
+  ],
+  "author": "Jeffrey R Johnson",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
