@@ -21,7 +21,7 @@ function toggleMenu() {
     // Set Menu State
     showMenu = true;
   } else {
-    menuBtn.classList.add('close');
+    menuBtn.classList.remove('close');
     menu.classList.remove('show');
     menuNav.classList.remove('show');
     menuBranding.classList.remove('show');
