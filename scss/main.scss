@@ -1,37 +1,18 @@
-@import 'config';
-@import 'menu';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-* {
-  box-sizing: border-box;
-}
+@import 'base/base';
+@import 'base/typography';
 
-body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
+@import 'components/bg-video';
 
-// Headings
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400;
+@import 'layout/navigation';
 
-  &.lg-heading {
-    font-size: 6rem;
-  }
-
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
-  }
-}
+@import 'pages/home';
+// @import "pages/home";
+// @import "pages/home";
+// @import "pages/home";
 
 a {
   color: #fff;
@@ -55,7 +36,7 @@ main {
 
   .icons {
     margin-top: 1rem;
-
+    text-align: center;
     a {
       padding: 0.4rem;
 
@@ -110,6 +91,18 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h6 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -188,5 +181,3 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-
-@import 'mobile';
